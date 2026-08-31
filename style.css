@@ -1,0 +1,86 @@
+:root {
+  --outside: #d6e8e0;
+  --body: #fcfaf6;
+  --ink: #292417;
+  --muted: #948f85;
+  --accent: #e05820;
+  --frame: #24201c;
+  --gold: #b89850;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--outside);
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    sans-serif;
+  line-height: 1.7;
+}
+
+main {
+  width: min(40rem, calc(100% - 2rem));
+  margin: 2.5rem auto 3rem;
+  padding: 1.75rem 1.5rem 2rem;
+  background: var(--body);
+  border: 3px solid var(--frame);
+  border-radius: 8px;
+}
+
+.brand {
+  margin: 0 0 0.35rem;
+  font-size: 1.65rem;
+  letter-spacing: 0.04em;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+h2 {
+  margin: 1.6rem 0 0.5rem;
+  font-size: 1.05rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--frame) 28%, transparent);
+}
+
+p,
+li {
+  font-size: 0.98rem;
+}
+
+ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.mail {
+  word-break: break-all;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+nav a + a {
+  margin-left: 1rem;
+}
